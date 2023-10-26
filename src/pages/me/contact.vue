@@ -33,11 +33,11 @@ export default Vue.extend({
       const social = this.$config.social
 
       const titles = {
-        discord: "Join my Discord server!",
+        // discord: "Join my Discord server!",
         twitter: "Follow me on Twitter!",
         github: "Follow me on GitHub!",
-        instagram: "Follow me on Instagram!",
-        trello: "View my Trello board!",
+        // instagram: "Follow me on Instagram!",
+        // trello: "View my Trello board!",
         linkedIn: "Connect with me on LinkedIn!",
       }
 
