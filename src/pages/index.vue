@@ -115,7 +115,7 @@ export default Vue.extend({
           {
             title: "Projects",
             description:
-              "All my projects about work",
+              "All my projects, including open-source, side-projects and more!",
             href: "/projects",
           },
         ],
