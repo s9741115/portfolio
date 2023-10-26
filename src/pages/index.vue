@@ -2,7 +2,7 @@
 import Vue from "vue"
 
 /* Interfaces */
-import type { Repository } from "../types/Response/GitHub"
+import type {Repository} from "../types/Response/GitHub"
 
 interface Project {
   title: string
@@ -37,94 +37,50 @@ export default Vue.extend({
       experiences: {
         jobs: [
           {
-            title: "Voco Inc.",
-            url: "https://vocoapp.com",
-            position: "Web Developer",
-            date: "2023-",
+            title: "ISB 久大寰宇",
+            url: "https://www.isb.com.tw/",
+            position: "PHP Backend Developer",
+            date: "2020/06 - ( 3 y 4 m )",
           },
           {
-            title: "Google Developer Student Clubs",
-            url: "https://gdsc.community.dev/mus-alparslan-universitesi",
-            position: "Core Team Member",
-            date: "2022-",
+            title: "晶峰科技",
+            url: "https://ct88.com.tw/",
+            position: "iOS Developer",
+            date: "2019/10 - 2020/06 ( 9 m )",
           },
           {
-            title: "KUKA Theater Associacion",
-            url: "https://kukasahne.com",
-            position: "Web Developer & Social Media Manager",
-            date: "2022-",
+            title: "明亞股份",
+            url: "",
+            position: "iOS Developer",
+            date: "2019/04 - 2019/07 ( 3 m )",
           },
           {
-            title: "Discord Templates",
-            url: "https://discords.com/templates",
-            position: "Web Developer & Co-Founder",
-            date: "2020-2021",
+            title: "火燒雲科技",
+            url: "https://pttcareers.com/Salary/1Kb1Kep0",
+            position: "iOS Developer & Backend Developer",
+            date: "2016/03 - 2019/03 ( 3 y )",
           },
           {
-            title: "IZM Game Studios",
-            position: "Solution Partner",
-            date: "2020-2021",
+            title: "敦頤資訊",
+            url: "https://www.coralline.com.tw/",
+            position: "iOS Developer",
+            date: "2015/01 - 2016/03 ( 1 y 2 m )",
             isHidden: true,
           },
           {
-            title: "TruckersMP",
-            url: "https://truckersmp.com/user/1648033",
-            position: "Community Moderator & Translator",
-            date: "2020-2021",
+            title: "玩美集品",
+            url: "https://www.perfect.tw/",
+            position: "iOS Developer",
+            date: "2014/07 - 2014/12 ( 6 m )",
             isHidden: true,
-          },
-          {
-            title: "WA Web+ Extension",
-            url: "https://wawplus.com",
-            position: "Translator",
-            date: "2020-2021",
-            isHidden: true,
-          },
-          {
-            title: "Batakköylü Düğün Salonu",
-            url: "https://batakkoylu.netlify.app",
-            position: "Web Developer",
-            date: "2020-2020",
-            isHidden: true,
-          },
-          {
-            title: "EGGSY's Discord Bot",
-            url: "https://top.gg/bot/eggsy",
-            position: "Creator, Developer and Maintainer",
-            date: "2017-2019",
-          },
-          {
-            title: "Discord Bot List",
-            url: "https://top.gg/user/162969778699501569",
-            position: "Website Moderator",
-            date: "2017-2018",
-          },
+          }
         ],
         education: [
           {
-            title: "Muş Alparslan University",
-            url: "http://alparslan.edu.tr/",
-            position: "English Language Teaching",
-            date: "2020-",
-          },
-          {
-            title: "Goce Delchev University",
-            url: "https://www.ugd.edu.mk/",
-            position: "Erasmus+ Student",
-            date: "2021-2022",
-          },
-          {
-            title: "Rotosis Robotics",
-            url: "https://www.rotosis.com/",
-            position: "Intern",
-            date: "2017-2018",
-            isHidden: true,
-          },
-          {
-            title: "Adil Karaağaç MTAL",
-            url: "https://akatl.meb.k12.tr/",
-            position: "Automation Systems",
-            date: "2014-2018",
+            title: "實踐大學",
+            url: "https://itc.kh.usc.edu.tw/",
+            position: "資訊科技與通訊學系",
+            date: "2008/09 - 2011/06 ( 3 y 10 m )",
           },
         ],
       } as ExperienceObject,
@@ -145,7 +101,7 @@ export default Vue.extend({
           {
             title: "Contact",
             description:
-              "Need help with anything? Want to get in touch? Send me a message!",
+              "Want to get in touch? Send me a message!",
             href: "/me/contact",
           },
         ],
@@ -153,26 +109,14 @@ export default Vue.extend({
           {
             title: "Blog",
             description:
-              "My Turkish stories about real-life, programming, development and more!",
-            href: "/blog",
+              "My Latest Blog Posts. I write about tech, programming and more!",
+            href: "https://medium.com/me/stories/public",
           },
           {
             title: "Projects",
             description:
-              "My projects and contributions to the open-source community.",
+              "All my projects about work",
             href: "/projects",
-          },
-          {
-            title: "Daily Songs",
-            description:
-              "Fresh, cool and great song recommendations from me each day!",
-            href: "/daily",
-          },
-          {
-            title: "Donate",
-            description:
-              "Want to support me and my projects so that I can create better stuff in the future?",
-            href: "/donate",
           },
         ],
       },
@@ -180,25 +124,37 @@ export default Vue.extend({
         {
           title: "Development",
           items: [
-            "TypeScript",
-            "Vue.js",
-            "React.js",
-            "HTML5",
-            "Tailwind CSS",
-            "Node.js",
-            "Sass",
+            {
+              title: "TypeScript",
+            },
+            {
+              title: "Laravel & PHP",
+              image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png"
+            },
+            {
+              title: "Docker",
+              image: "https://d1.awsstatic.com/acs/characters/Logos/Docker-Logo_Horizontel_279x131.b8a5c41e56b77706656d61080f6a0217a3ba356d.png"
+            },
+            {
+              title: "Nuxt3 & Vue3",
+              image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqc8y9vg7_R6EqZoXObhwRdkl2FH54VkWEcEpXO6HzWXHwoLSY6V1wKzazD7spkKw4mvY&usqp=CAU"
+            }
           ],
         },
         {
           title: "Apps",
           items: [
             {
-              title: "VS Code",
-              iconPack: "IconBrand",
+              title: "PHPStorm",
+              image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/PhpStorm_Icon.svg/2048px-PhpStorm_Icon.svg.png",
             },
             {
-              title: "Raycast",
-              image: "https://i.imgur.com/NBc0C4j.png",
+              title: "Jira",
+              image: "https://www.guidecx.com/wp-content/uploads/2023/08/Jira-Icon-Website.png"
+            },
+            {
+              title: "WebStorm",
+              image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/WebStorm_Icon.svg/1024px-WebStorm_Icon.svg.png",
             },
             {
               title: "Figma",
@@ -209,8 +165,8 @@ export default Vue.extend({
           title: "Services",
           items: [
             {
-              title: "GitHub",
-              iconPack: "IconBrand",
+              title: "GCP",
+              image: "data:image/png;base64,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",
             },
             {
               title: "Firebase",
@@ -218,6 +174,10 @@ export default Vue.extend({
             {
               title: "Netlify",
               iconPack: "IconBrand",
+            },
+            {
+              title: "Linode",
+              image: "https://pbs.twimg.com/profile_images/1410588917666136073/_-zArZPH_400x400.png",
             },
           ],
         },
@@ -249,12 +209,12 @@ export default Vue.extend({
     >
       <div class="md:w-8/12">
         <div class="space-y-6">
-          <Status class="mt-4 flex justify-center md:justify-start" />
+          <Status class="mt-4 flex justify-center md:justify-start"/>
 
           <h1
             class="font-semibold text-center text-4xl md:(text-6xl text-left) text-black/90 leading-normal dark:text-white/90"
           >
-            Full-stack web developer
+            Full-stack php web developer
           </h1>
 
           <div
@@ -265,14 +225,14 @@ export default Vue.extend({
               :key="item"
               class="inline-block"
             >
-              <IconDev :brand="item" class="h-5 w-5" />
+              <IconDev :brand="item" class="h-5 w-5"/>
             </Button>
 
             <Button
               v-tippy="{ content: 'More', placement: 'bottom' }"
               @click.native="scrollToSection('#technologies')"
             >
-              <IconEllipsis class="h-5 w-5" />
+              <IconEllipsis class="h-5 w-5"/>
             </Button>
           </div>
         </div>
