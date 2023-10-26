@@ -2,34 +2,20 @@
   "private": true,
   "license": "MIT",
   "version": "6.0.0",
-  "homepage": "https://eggsy.xyz",
-  "readme": "https://github.com/eggsy/website#readme",
+  "homepage": "https://tasb00429.netlify.app/",
+  "readme": "https://github.com/5SMNOONMS5",
   "engines": {
     "node": ">=16.9"
   },
   "author": {
-    "name": "Abdulbaki Dursun",
-    "email": "eggsydev@gmail.com",
-    "url": "https://eggsy.xyz"
-  },
-  "bugs": {
-    "email": "eggsydev@gmail.com",
-    "url": "https://github.com/eggsy/website/issues"
+    "name": "Stephen Chen",
+    "email": "tasb00429@gmail.com",
+    "url": "https://github.com/5SMNOONMS5"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/eggsy/website.git"
+    "url": "https://github.com/5SMNOONMS5/portfolio"
   },
-  "funding": [
-    {
-      "type": "individual",
-      "url": "https://eggsy.xyz/donate"
-    },
-    {
-      "type": "github",
-      "url": "https://github.com/sponsors/eggsy"
-    }
-  ],
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
