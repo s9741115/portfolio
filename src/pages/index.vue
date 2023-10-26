@@ -261,20 +261,19 @@ export default Vue.extend({
       </div>
     </section>
 
-    <section id="me">
-      <Title>Me</Title>
-
-      <div class="mt-4 grid gap-4 md:grid-cols-2">
-        <Card
-          v-for="(card, index) in cards.me"
-          :key="`card-m-${index}`"
-          :title="card.title"
-          :href="card.href"
-        >
-          {{ card.description }}
-        </Card>
-      </div>
-    </section>
+<!--    <section id="me">-->
+<!--      <Title>Me</Title>-->
+<!--      <div class="mt-4 grid gap-4 md:grid-cols-2">-->
+<!--        <Card-->
+<!--          v-for="(card, index) in cards.me"-->
+<!--          :key="`card-m-${index}`"-->
+<!--          :title="card.title"-->
+<!--          :href="card.href"-->
+<!--        >-->
+<!--          {{ card.description }}-->
+<!--        </Card>-->
+<!--      </div>-->
+<!--    </section>-->
 
     <section id="experiences" class="grid gap-x-8 gap-y-24 md:grid-cols-2">
       <div>
