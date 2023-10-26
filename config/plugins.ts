@@ -13,10 +13,6 @@ const Plugins: NuxtOptionsPlugin[] = [
     mode: "client",
   },
   {
-    src: "@/plugins/Firebase",
-    mode: "client",
-  },
-  {
     src: "@/plugins/Tippy",
     mode: "client",
   },
