@@ -185,6 +185,6 @@ export default Vue.extend({
     <GoTop />
 
     <!-- Sponsor Popup -->
-    <SponsorPopup />
+<!--    <SponsorPopup />-->
   </div>
 </template>
