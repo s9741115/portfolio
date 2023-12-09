@@ -18,7 +18,7 @@
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <path d="M0 0h24v24H0V0z" fill="#fff" />
+    <path d="M0 0h24v24H0V0z" fill="#fff"/>
     <path
       d="M0 12v12h24V0H0v12zm19.34-.956c.61.152 1.075.423 1.502.865.221.236.549.667.575.77.008.03-1.036.73-1.669 1.123-.022.015-.114-.083-.217-.236-.309-.45-.632-.644-1.128-.678-.727-.05-1.2.332-1.192.967a.88.88 0 00.103.45c.16.332.457.53 1.39.934 1.718.739 2.453 1.226 2.91 1.92.51.773.625 2.008.278 2.926-.38.998-1.325 1.676-2.655 1.9-.411.073-1.386.062-1.828-.018-.964-.171-1.878-.647-2.442-1.272-.221-.244-.651-.88-.625-.926.011-.015.11-.076.221-.141l.892-.514.69-.4.145.213c.201.31.643.732.91.873.766.404 1.817.346 2.335-.118.221-.202.312-.412.312-.72 0-.279-.033-.4-.178-.61-.187-.266-.568-.49-1.65-.96-1.239-.533-1.772-.864-2.26-1.39a3.167 3.167 0 01-.659-1.2c-.091-.34-.114-1.189-.042-1.531.255-1.2 1.158-2.031 2.462-2.279.422-.08 1.406-.05 1.82.054v-.002zm-5.633 1.001l.007.983H10.59v8.876H8.381v-8.876H5.257v-.964l.027-.99c.01-.015 1.912-.022 4.217-.019l4.194.012.012.978z"
       fill="#007ACC"
@@ -182,8 +182,8 @@
         y2="31.089"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#2383AE" />
-        <stop offset="1" stop-color="#6DD7B9" />
+        <stop stop-color="#2383AE"/>
+        <stop offset="1" stop-color="#6DD7B9"/>
       </linearGradient>
     </defs>
   </svg>
@@ -222,9 +222,9 @@
         y2="23.279"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset=".078" stop-color="#54C8F1" />
-        <stop offset=".573" stop-color="#41A2EF" />
-        <stop offset="1" stop-color="#3386EE" />
+        <stop offset=".078" stop-color="#54C8F1"/>
+        <stop offset=".573" stop-color="#41A2EF"/>
+        <stop offset="1" stop-color="#3386EE"/>
       </linearGradient>
       <linearGradient
         id="prefix__prefix__paint1_linear"
@@ -234,9 +234,9 @@
         y2="23.279"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset=".078" stop-color="#54C8F1" />
-        <stop offset=".573" stop-color="#41A2EF" />
-        <stop offset="1" stop-color="#3386EE" />
+        <stop offset=".078" stop-color="#54C8F1"/>
+        <stop offset=".573" stop-color="#41A2EF"/>
+        <stop offset="1" stop-color="#3386EE"/>
       </linearGradient>
       <linearGradient
         id="prefix__prefix__paint2_linear"
@@ -246,9 +246,9 @@
         y2="23.279"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset=".078" stop-color="#54C8F1" />
-        <stop offset=".573" stop-color="#41A2EF" />
-        <stop offset="1" stop-color="#3386EE" />
+        <stop offset=".078" stop-color="#54C8F1"/>
+        <stop offset=".573" stop-color="#41A2EF"/>
+        <stop offset="1" stop-color="#3386EE"/>
       </linearGradient>
       <linearGradient
         id="prefix__prefix__paint3_linear"
@@ -258,12 +258,12 @@
         y2="23.279"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset=".078" stop-color="#54C8F1" />
-        <stop offset=".573" stop-color="#41A2EF" />
-        <stop offset="1" stop-color="#3386EE" />
+        <stop offset=".078" stop-color="#54C8F1"/>
+        <stop offset=".573" stop-color="#41A2EF"/>
+        <stop offset="1" stop-color="#3386EE"/>
       </linearGradient>
       <clipPath id="prefix__prefix__clip0">
-        <path fill="#fff" d="M0 0h24v24H0z" />
+        <path fill="#fff" d="M0 0h24v24H0z"/>
       </clipPath>
     </defs>
   </svg>
@@ -362,6 +362,19 @@
     />
   </svg>
 
+  <!-- Laravel -->
+
+  <svg
+    v-else-if="isSame('Laravel')"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 512 512"
+       width="512"
+       height="512">
+    <path fill="#fb503b"
+          d="M138.799 44.583c-.994-.994-13.748-17.061-15.9-19.712-2.319-2.65-3.313-2.153-4.8-1.988s-17.558 2.982-19.38 3.147c-1.822.331-2.982.994-1.822 2.65.994 1.491 11.6 16.4 13.914 19.877l-42.239 10.1L35.107 2.509C33.782.522 33.45-.141 30.469.025S4.131 2.178 2.475 2.178c-1.656.166-3.481.828-1.822 4.804s28.159 60.956 28.822 62.613 2.65 4.307 7.123 3.313c4.638-1.16 20.54-5.3 29.319-7.62 4.638 8.282 13.914 25.178 15.736 27.662 2.319 3.313 3.975 2.65 7.454 1.656 2.816-.828 43.4-15.4 45.221-16.233s2.982-1.325 1.656-3.147c-.994-1.325-11.6-15.736-17.227-23.19 3.81-.994 17.558-4.638 19.049-5.135 1.656-.5 1.988-1.325.994-2.319ZM62.106 60.315c-.5.166-24.184 5.8-25.343 6.129-1.325.331-1.325.166-1.325-.331-.331-.498-28.159-58.137-28.656-58.798-.331-.663-.331-1.325 0-1.325S29.143 4 29.806 4c.828 0 .663.166.994.663 0 0 30.975 53.5 31.472 54.331.663.828.331 1.16-.166 1.325Zm66.588 12.427c.331.663.828.994-.5 1.325-1.159.5-39.92 13.583-40.748 13.914s-1.325.5-2.319-.994-13.583-23.19-13.583-23.19l41.25-10.767c.994-.331 1.325-.5 1.988.5.663 1.16 13.583 18.718 13.914 19.215Zm2.65-29.153c-.994.166-16.067 3.975-16.067 3.975l-12.423-16.9c-.331-.5-.663-.994.166-1.16s14.908-2.65 15.57-2.816 1.16-.331 1.988.828c.828.994 11.429 14.577 11.926 15.074s-.166.828-1.16.994Z"></path>
+  </svg>
+
+
   <!-- Play Store -->
   <svg
     v-else-if="isSame('PlayStore')"
@@ -389,7 +402,7 @@
     </g>
     <defs>
       <clipPath id="prefix__prefix__clip0">
-        <path fill="#fff" transform="translate(2 2)" d="M0 0h20v20H0z" />
+        <path fill="#fff" transform="translate(2 2)" d="M0 0h20v20H0z"/>
       </clipPath>
     </defs>
   </svg>
@@ -418,8 +431,8 @@
         y2="23"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#17C9FB" />
-        <stop offset="1" stop-color="#1A74E8" />
+        <stop stop-color="#17C9FB"/>
+        <stop offset="1" stop-color="#1A74E8"/>
       </linearGradient>
     </defs>
   </svg>
