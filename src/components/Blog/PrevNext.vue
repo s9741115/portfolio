@@ -19,7 +19,7 @@ export default Vue.extend({
     }
   },
   async fetch() {
-    const [prev, next] = (await this.$content("blog")
+    const [prev, next] = (await this.$content("projects")
       .only(["title", "slug"])
       .sortBy("createdAt", "asc")
       .surround(this.currentSlug)
@@ -39,7 +39,7 @@ export default Vue.extend({
     >
       <component
         :is="prev ? 'SmartLink' : 'div'"
-        :href="prev && `/blog/${prev.slug}`"
+        :href="prev && `/project/${prev.slug}`"
         class="rounded-lg card-base flex items-center space-x-2"
         :class="
           !prev
@@ -55,7 +55,7 @@ export default Vue.extend({
 
       <component
         :is="next ? 'SmartLink' : 'div'"
-        :href="next && `/blog/${next.slug}`"
+        :href="next && `/projects/${next.slug}`"
         class="rounded-lg card-base flex items-center space-x-2 justify-end"
         :class="
           !next
