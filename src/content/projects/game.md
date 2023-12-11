@@ -1,16 +1,15 @@
 ---
-title: 6 款小遊戲
+title: 6 款遊戲
 description: 這幾款遊戲讓使用者可以下注，機率隨機開獎
-header: https://raw.githubusercontent.com/5SMNOONMS5/portfolio/main/resources/projects/newoil3/newoil3_1.png
+header: https://raw.githubusercontent.com/5SMNOONMS5/portfolio/main/resources/projects/game/game1.png
 tags: 
   - Laravel
   - GCP
 createdAt: 2023-03-11T13:32:52.449Z
 ---
 
-### 遊戲示意圖
+### 示意圖
 
-<smart-figure src="https://raw.githubusercontent.com/5SMNOONMS5/portfolio/main/resources/projects/game/game1.png"></smart-figure>
 <smart-figure src="https://raw.githubusercontent.com/5SMNOONMS5/portfolio/main/resources/projects/game/game2.png"></smart-figure>
 <smart-figure src="https://raw.githubusercontent.com/5SMNOONMS5/portfolio/main/resources/projects/game/game3.png"></smart-figure>
 <smart-figure src="https://raw.githubusercontent.com/5SMNOONMS5/portfolio/main/resources/projects/game/game4.png"></smart-figure>
