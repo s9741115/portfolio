@@ -26,4 +26,4 @@ createdAt: 2023-03-11T13:32:52.449Z
   * Laradock
 
 * 後端
-  * [LiveWire](https://laravel-livewire.com/)
+  * [Livewire](https://laravel-livewire.com/)

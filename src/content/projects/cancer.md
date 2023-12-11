@@ -29,7 +29,7 @@ createdAt: 2023-03-11T13:32:52.449Z
 
 * 後端
   * JWT Token
-  * LiveWire
+  * [Livewire](https://laravel-livewire.com/)
 
 ### 相關技術文章
 

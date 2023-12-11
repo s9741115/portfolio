@@ -41,7 +41,7 @@ Scribe 我覺得很好用，相比 swagger 寫很麻煩的 Docs，而且語法�
   * AWS S3
 
 * 後端
-  * LiveWire
+  * [Livewire](https://laravel-livewire.com/)
 
 * API 文檔
   * [Scribe API Docs](https://scribe.knuckles.wtf/laravel/documenting)
