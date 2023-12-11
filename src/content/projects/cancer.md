@@ -18,9 +18,19 @@ createdAt: 2023-03-11T13:32:52.449Z
 <smart-figure src="https://raw.githubusercontent.com/5SMNOONMS5/portfolio/main/resources/projects/cancer/screenshot4.png"></smart-figure>
 <smart-figure src="https://raw.githubusercontent.com/5SMNOONMS5/portfolio/main/resources/projects/cancer/screenshot5.png"></smart-figure>
 
-### 後端技術細節
+### 後端技術 ＆ 部分邏輯
 
 此專案比較著重在需要配合醫院的邏輯上面，技術上能比較能分享的是使用到了 Firebase 來發送 Push Notification，還有跟 [Google Form 結合來做問卷調查](https://medium.com/@tasb00429/laravel-google-form-%E5%BF%AB%E9%80%9F%E4%B8%94%E7%B0%A1%E6%98%93%E7%9A%84%E5%95%8F%E5%8D%B7%E7%B3%BB%E7%B5%B1-73fe97f0efd4)
+
+醫院邏輯這邊較為複雜，除了每個醫生只能看得到自己的病人之外（ 透過疾病來區分 ），還有病例，病人的權限控管
+
+以下這張圖每個病人根據當前病例的狀態所對應到的功能權限
+
+<smart-figure src="https://raw.githubusercontent.com/5SMNOONMS5/portfolio/main/resources/projects/cancer/screenshot6.png"></smart-figure>
+
+後台 Figma
+
+<smart-figure src="https://raw.githubusercontent.com/5SMNOONMS5/portfolio/main/resources/projects/cancer/screenshot7.png"></smart-figure>
 
 ### 使用技術
 
