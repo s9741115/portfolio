@@ -20,14 +20,14 @@ export const generateDone = async (generator: any) => {
   const folderPath = join(generateDir, "./og-images/")
 
   const { $content } = require("@nuxt/content")
-  const articles = await $content("blog").fetch()
+  const projects = await $content("projects").fetch()
 
-  if (!articles.length) return
+  if (!projects.length) return
 
-  consola.info(`Generating OG images for ${articles.length} posts.`)
+  consola.info(`Generating OG images for ${projects.length} posts.`)
 
-  for (const article of articles) {
-    const { title, description, slug, body, createdAt, tags } = article
+  for (const project of projects) {
+    const { title, description, slug, body, createdAt, tags } = project
 
     const readingTime = getReadingTime(JSON.stringify(body))
     const postDate = formatter.format(new Date(createdAt)).split(".").join("/")
@@ -43,5 +43,5 @@ export const generateDone = async (generator: any) => {
     writeFileSync(join(folderPath, `./${slug}.png`), metaImage)
   }
 
-  consola.success(`Generated ${articles.length} OG images.`)
+  consola.success(`Generated ${projects.length} OG images.`)
 }

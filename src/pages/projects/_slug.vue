@@ -33,7 +33,7 @@ export default Vue.extend({
       const array = []
 
       for (const key of project.related) {
-        const { title }: any = await this.$content("blog", key)
+        const { title }: any = await this.$content("projects", key)
           .only(["title"])
           .fetch()
 
@@ -212,8 +212,8 @@ export default Vue.extend({
       <Disqus
         v-if="!$config.isDev"
         :title="project.title"
-        :url="`https://eggsy.xyz/blog/${project.slug}`"
-        :identifier="`/blog/${project.slug}`"
+        :url="`https://stephen-chen-portfolio.netlify.app/projects/${project.slug}`"
+        :identifier="`/projects/${project.slug}`"
         :slug="project.slug"
         lang="tr"
         class="mt-10"
@@ -229,7 +229,7 @@ export default Vue.extend({
             <NuxtLink
               v-for="(relatedPost, index) in getRelatedPosts"
               :key="`related-${index}`"
-              :to="`/blog/${relatedPost.slug}`"
+              :to="`/projects/${relatedPost.slug}`"
               class="rounded-lg border-[0.1px] p-4 bg-opacity-25 bg-neutral-300 border-neutral-200 dark:(bg-neutral-800/30 border-neutral-800) flex items-center space-x-2 hover:bg-opacity-40 transition-colors dark:text-white/80 dark:hover:text-white transition-colors"
             >
               <IconDocument class="w-4 h-4" />

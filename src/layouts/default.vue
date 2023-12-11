@@ -2,23 +2,21 @@
 import Vue from "vue"
 
 // Types
-import type { Post } from "~/src/types/Post"
-import type { FetchReturn } from "@nuxt/content/types/query-builder"
+import type {Post} from "~/src/types/Post"
+import type {FetchReturn} from "@nuxt/content/types/query-builder"
 
 export default Vue.extend({
   data() {
     return {
-      posts: [] as (Post[] & FetchReturn) | (Post[] & FetchReturn)[],
+      projects: [] as (Post[] & FetchReturn) | (Post[] & FetchReturn)[],
     }
   },
   fetchOnServer: false,
   async fetch() {
-    const posts = await this.$content("blog")
+    this.projects = await this.$content("projects")
       .sortBy("createdAt", "desc")
       .only(["title", "slug"])
       .fetch<Post[]>()
-
-    this.posts = posts
   },
   head() {
     let string = "Stephen Chen - portfolio"
@@ -51,35 +49,35 @@ export default Vue.extend({
         },
         {
           section: "Navigation",
-          text: "Blog",
-          tag: "Search a blog post",
+          text: "Project",
+          tag: "Search a project",
           icon: "IconDocument",
           keybindings: ["b"],
           childActions: [
             {
-              text: "All Posts",
+              text: "All Projects",
               icon: "IconEye",
               action: () => {
-                this.$router.push("/blog")
+                this.$router.push("/projects")
               },
             },
-            ...this.posts.map((post: Post) => ({
-              text: post.title,
+            ...this.projects.map((project: Post) => ({
+              text: project.title,
               icon: "IconDocument",
               action: () => {
-                this.$router.push(`/blog/${post.slug}`)
+                this.$router.push(`/projects/${project.slug}`)
               },
             })),
           ],
         },
-        {
-          section: "Navigation",
-          text: "Projects",
-          icon: "IconCog",
-          action: () => {
-            this.$router.push("/projects")
-          },
-        },
+        // {
+        //   section: "Navigation",
+        //   text: "Projects",
+        //   icon: "IconCog",
+        //   action: () => {
+        //     this.$router.push("/projects")
+        //   },
+        // },
         // {
         //   section: "Navigation",
         //   text: "Donate",
@@ -98,30 +96,30 @@ export default Vue.extend({
         // },
 
         /* Me */
-        {
-          section: "Me",
-          text: "Repositories",
-          icon: "IconBranch",
-          action: () => {
-            this.$router.push("/me/repos")
-          },
-        },
-        {
-          section: "Me",
-          text: "Songs",
-          icon: "IconStar",
-          action: () => {
-            this.$router.push("/me/songs")
-          },
-        },
-        {
-          section: "Me",
-          text: "Contact",
-          icon: "IconInbox",
-          action: () => {
-            this.$router.push("/me/contact")
-          },
-        },
+        // {
+        //   section: "Me",
+        //   text: "Repositories",
+        //   icon: "IconBranch",
+        //   action: () => {
+        //     this.$router.push("/me/repos")
+        //   },
+        // },
+        // {
+        //   section: "Me",
+        //   text: "Songs",
+        //   icon: "IconStar",
+        //   action: () => {
+        //     this.$router.push("/me/songs")
+        //   },
+        // },
+        // {
+        //   section: "Me",
+        //   text: "Contact",
+        //   icon: "IconInbox",
+        //   action: () => {
+        //     this.$router.push("/me/contact")
+        //   },
+        // },
 
         /* Quick Links */
         {

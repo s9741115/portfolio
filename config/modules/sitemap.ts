@@ -1,14 +1,14 @@
 export default async function () {
   const { $content } = require("@nuxt/content")
-  const posts = await $content("blog").fetch()
+  const projects = await $content("projects").fetch()
 
   const routes = []
-  for (const post of posts) {
-    routes.push(`blog/${post.slug}`)
+  for (const project of projects) {
+    routes.push(`projects/${project.slug}`)
   }
 
   return {
-    hostname: "https://eggsy.xyz",
+    hostname: "https://stephen-chen-portfolio.netlify.app",
     gzip: true,
     routes,
   }

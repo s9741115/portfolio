@@ -3,15 +3,15 @@ import Vue from "vue"
 
 export default Vue.extend({
   computed: {
-    routeIsBlog() {
-      return this.$route.name?.includes("blog")
+    routeIsProject() {
+      return this.$route.name?.includes("projects")
     },
     getTargetLink() {
       const path = this.$route.path
 
       if (path !== "/projects/premid" && path.startsWith("/projects/premid"))
         return "/projects/premid"
-      else if (this.routeIsBlog && this.$route.params?.slug) return "/blog"
+      else if (this.routeIsProject && this.$route.params?.slug) return "/projects"
       else return "/"
     },
   },
@@ -33,10 +33,10 @@ export default Vue.extend({
 
           <Transition name="fade" mode="out-in">
             <span
-              v-if="routeIsBlog"
+              v-if="routeIsProject"
               class="text-black/90 text-sm uppercase font-medium dark:text-white/90"
             >
-              Blog
+              Projects
             </span>
           </Transition>
         </SmartLink>

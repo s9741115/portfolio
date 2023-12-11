@@ -1,5 +1,5 @@
 const Feed = () => {
-  const baseUrlArticles = "https://eggsy.xyz/blog"
+  const baseUrlProjects = "https://stephen-chen-portfolio.netlify.app/projects"
 
   const feedFormats = {
     rss: { type: "rss2", file: "rss.xml" },
@@ -10,34 +10,34 @@ const Feed = () => {
 
   const createFeedArticles = async function (feed: any) {
     feed.options = {
-      title: "EGGSY's Blog",
+      title: "Stephen Chen's Portfolio",
       description:
-        "EGGSY'nin günlük hayattan, tecrübelerinden bahsettiği, göstermek veya anlatmak istediği şeyleri daha düzenli ve profesyonel bir şekilde tuttuğu blog sayfası.",
-      link: baseUrlArticles,
+        "Stephen Chen's Portfolio",
+      link: baseUrlProjects,
     }
 
-    const articles = await $content("blog").fetch()
+    const projects = await $content("projects").fetch()
 
-    articles.forEach((article: any) => {
-      const url = `${baseUrlArticles}/${article.slug}`
+    projects.forEach((project: any) => {
+      const url = `${baseUrlProjects}/${project.slug}`
 
       const hostName =
         process.env.NODE_ENV === "production"
-          ? "https://eggsy.xyz"
+          ? "https://stephen-chen-portfolio.netlify.app"
           : "http://localhost:3000"
 
       const postImagesPath = `${hostName}/assets/images/posts`
 
       feed.addItem({
-        title: article.title,
-        slug: article.slug,
+        title: project.title,
+        slug: project.slug,
         link: url,
-        image: article.image
-          ? `${hostName}${article.image}`
+        image: project.image
+          ? `${hostName}${project.image}`
           : `${postImagesPath}/${url?.split("/")?.at(-1)}.jpg`,
-        date: new Date(article.createdAt),
-        description: article.description,
-        content: article.summary,
+        date: new Date(project.createdAt),
+        description: project.description,
+        content: project.summary,
       })
     })
   }
