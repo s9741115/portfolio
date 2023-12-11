@@ -21,8 +21,7 @@ export default Vue.extend({
     this.posts = posts
   },
   head() {
-    let string = "eggsy.xyz"
-    if (this.routeIsBlog) string = "eggsy.xyz - blog"
+    let string = "Stephen Chen - portfolio"
 
     return {
       titleTemplate: `%s - ${string}`,
@@ -81,22 +80,22 @@ export default Vue.extend({
             this.$router.push("/projects")
           },
         },
-        {
-          section: "Navigation",
-          text: "Donate",
-          icon: "IconDollar",
-          action: () => {
-            this.$router.push("/donate")
-          },
-        },
-        {
-          section: "Navigation",
-          text: "Daily Song",
-          icon: "IconMusicNote",
-          action: () => {
-            this.$router.push("/daily")
-          },
-        },
+        // {
+        //   section: "Navigation",
+        //   text: "Donate",
+        //   icon: "IconDollar",
+        //   action: () => {
+        //     this.$router.push("/donate")
+        //   },
+        // },
+        // {
+        //   section: "Navigation",
+        //   text: "Daily Song",
+        //   icon: "IconMusicNote",
+        //   action: () => {
+        //     this.$router.push("/daily")
+        //   },
+        // },
 
         /* Me */
         {

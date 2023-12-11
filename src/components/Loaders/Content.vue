@@ -85,15 +85,13 @@ export default Vue.extend({
 
   <div v-else class="space-y-6 pt-14">
     <h1 class="font-semibold text-2xl text-black/90 dark:text-white/90">
-      Gönderi yüklenemedi.
+      Project not found
     </h1>
 
     <p class="text-black/50 dark:text-white/30">
-      Aradığınız gönderinin blogumda olduğuna, adreste bir yanlışlık olmadığına
-      emin olun. Arama özelliğini kullanarak gönderiyi aratabilir, anasayfaya
-      dönerek diğer gönderilerime ulaşabilirsiniz.
+      The project you are looking for does not exist.
     </p>
 
-    <Button icon="IconBack" @click.native="$router.back()">Geri Dön</Button>
+    <Button icon="IconBack" @click.native="$router.back()">Go back</Button>
   </div>
 </template>
