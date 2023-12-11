@@ -46,7 +46,9 @@ const Config: NuxtConfig = {
   modules,
   plugins,
   publicRuntimeConfig,
-
+  modules: [
+    '@nuxt/content'
+  ],
   hooks: {
     generate: {
       async done(generator) {
