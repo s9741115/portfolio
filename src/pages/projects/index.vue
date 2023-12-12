@@ -41,28 +41,27 @@ export default Vue.extend({
         this.$fetchState?.pending === true && this.$fetchState.error !== null
       )
     },
-    getYearGroupedPosts() {
-      const yearsOfPosts = new Map() as Map<number, Project[]>
+    getTypeGroupedProjects() {
+      const typeOfProjects = new Map() as Map<number, Project[]>
 
       for (const project of this.projects) {
-        if (!project.createdAt) continue
-        const year = new Date(project.createdAt).getFullYear()
+        if (!project.type) continue
 
-        if (yearsOfPosts.has(year)) {
-          yearsOfPosts.get(year)?.push(project as Project)
+        if (typeOfProjects.has(project.type)) {
+          typeOfProjects.get(project.type)?.push(project as Project)
         } else {
-          yearsOfPosts.set(year, [project as Project])
+          typeOfProjects.set(project.type, [project as Project])
         }
       }
 
-      const years = [...yearsOfPosts.keys()].sort((a, b) => b - a)
-      const sortedByYears = new Map() as Map<number, Project[]>
+      const type = [...typeOfProjects.keys()].sort((a, b) => b - a)
+      const sortedByTypes = new Map() as Map<number, Project[]>
 
-      for (const year of years) {
-        sortedByYears.set(year, yearsOfPosts.get(year)!)
+      for (const year of type) {
+        sortedByTypes.set(year, typeOfProjects.get(year)!)
       }
 
-      return sortedByYears
+      return sortedByTypes
     },
   },
   watch: {
@@ -80,11 +79,11 @@ export default Vue.extend({
 </script>
 
 <template>
-  <LoadersBlog v-if="$fetchState.pending || $fetchState.error !== null" />
+  <LoadersBlog v-if="$fetchState.pending || $fetchState.error !== null"/>
 
   <div v-else class="mt-12 space-y-10">
     <section
-      v-for="[year, projects] in getYearGroupedPosts"
+      v-for="[year, projects] in getTypeGroupedProjects"
       :key="year"
       class="space-y-4"
     >
@@ -92,12 +91,13 @@ export default Vue.extend({
         {{ year }}
       </h1>
 
-      <div class="space-y-3">
+      <div class="space-y-3 card-base"
+           v-for="project in projects"
+           :key="project.slug"
+      >
         <NuxtLink
-          v-for="project in projects"
-          :key="project.slug"
           :to="`/projects/${project.slug}`"
-          class="flex items-start gap-6 card-base rounded-lg"
+          class="flex items-start gap-6 rounded-lg"
         >
           <span
             class="w-[20%] text-black/50 dark:text-white/50 md:w-1/12 flex-shrink-0"
@@ -111,6 +111,13 @@ export default Vue.extend({
             {{ project.title }}
           </span>
         </NuxtLink>
+        <div>
+            <span
+              class="text-gray-400 dark:text-blue-200 leading-relaxed"
+            >
+            {{ project.description }}
+          </span>
+        </div>
       </div>
     </section>
   </div>
