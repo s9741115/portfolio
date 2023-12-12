@@ -82,13 +82,13 @@ export default Vue.extend({
       <IconBrand brand="twitter" class="text-[#1DA1F2] h-6 w-6" />
     </Button>
 
-    <Button rounded @click.native="share('telegram')">
-      <IconBrand brand="telegram" class="text-[#2EAADE] h-6 w-6" />
-    </Button>
+<!--    <Button rounded @click.native="share('telegram')">-->
+<!--      <IconBrand brand="telegram" class="text-[#2EAADE] h-6 w-6" />-->
+<!--    </Button>-->
 
-    <Button rounded @click.native="share('whatsapp')">
-      <IconBrand brand="whatsapp" class="text-[#25D366] h-6 w-6" />
-    </Button>
+<!--    <Button rounded @click.native="share('whatsapp')">-->
+<!--      <IconBrand brand="whatsapp" class="text-[#25D366] h-6 w-6" />-->
+<!--    </Button>-->
 
     <Button rounded @click.native="share('url')">
       <IconCheck v-if="copied === true" class="text-green-500 h-6 w-6" />
