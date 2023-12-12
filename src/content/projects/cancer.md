@@ -2,6 +2,8 @@
 title: 數位照護 APP
 description: 將照護流程延續至病友生活中
 header: https://raw.githubusercontent.com/5SMNOONMS5/portfolio/main/resources/projects/cancer/screenshot1.png
+type:
+  - side-project
 tags:
   - Laravel
 createdAt: 2023-03-11T13:32:52.449Z

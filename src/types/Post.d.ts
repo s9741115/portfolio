@@ -24,6 +24,8 @@ export interface Toc {
 }
 
 export interface Post {
+  categories?: string[]
+  type?: string
   header?: string
   slug?: string
   description?: string
