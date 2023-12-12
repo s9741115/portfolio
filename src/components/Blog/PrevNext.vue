@@ -39,7 +39,7 @@ export default Vue.extend({
     >
       <component
         :is="prev ? 'SmartLink' : 'div'"
-        :href="prev && `/project/${prev.slug}`"
+        :href="prev && `/projects/${prev.slug}`"
         class="rounded-lg card-base flex items-center space-x-2"
         :class="
           !prev
