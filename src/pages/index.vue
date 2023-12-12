@@ -209,7 +209,7 @@ export default Vue.extend({
     >
       <div class="md:w-8/12">
         <div class="space-y-6">
-          <Status class="mt-4 flex justify-center md:justify-start"/>
+<!--          <Status class="mt-4 flex justify-center md:justify-start"/>-->
 
           <h1
             class="font-semibold text-center text-4xl md:(text-6xl text-left) text-black/90 leading-normal dark:text-white/90"
