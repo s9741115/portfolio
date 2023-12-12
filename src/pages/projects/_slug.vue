@@ -2,7 +2,7 @@
 import Vue from "vue"
 
 /* Interfaces */
-import type { Post } from "~/src/types/Post"
+import type { Project } from "~/src/types/Post"
 
 interface RelatedPost {
   title: string
@@ -12,7 +12,7 @@ interface RelatedPost {
 export default Vue.extend({
   data() {
     return {
-      project: {} as Post,
+      project: {} as Project,
       related: [] as RelatedPost[],
     }
   },
@@ -20,7 +20,7 @@ export default Vue.extend({
     const project = (await this.$content(
       "projects",
       this.$route.params.slug
-    ).fetch()) as Post
+    ).fetch()) as Project
 
     if (!project) {
       this.$router.push("/projects")

@@ -2,13 +2,13 @@
 import Vue from "vue"
 
 // Types
-import type {Post} from "~/src/types/Post"
+import type {Project} from "~/src/types/Post"
 import type {FetchReturn} from "@nuxt/content/types/query-builder"
 
 export default Vue.extend({
   data() {
     return {
-      projects: [] as (Post[] & FetchReturn) | (Post[] & FetchReturn)[],
+      projects: [] as (Project[] & FetchReturn) | (Project[] & FetchReturn)[],
     }
   },
   fetchOnServer: false,
@@ -16,7 +16,7 @@ export default Vue.extend({
     this.projects = await this.$content("projects")
       .sortBy("createdAt", "desc")
       .only(["title", "slug"])
-      .fetch<Post[]>()
+      .fetch<Project[]>()
   },
   head() {
     let string = "Stephen Chen - portfolio"
@@ -61,7 +61,7 @@ export default Vue.extend({
                 this.$router.push("/projects")
               },
             },
-            ...this.projects.map((project: Post) => ({
+            ...this.projects.map((project: Project) => ({
               text: project.title,
               icon: "IconDocument",
               action: () => {

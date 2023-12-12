@@ -2,7 +2,7 @@
 import Vue, { PropType } from "vue"
 
 /* Interfaces */
-import type { Post } from "@/types/Post"
+import type { Project } from "@/types/Post"
 
 export interface PostMeta {
   title?: string
@@ -17,7 +17,7 @@ export interface PostMeta {
 export default Vue.extend({
   props: {
     post: {
-      type: Object as PropType<Post>,
+      type: Object as PropType<Project>,
       required: true,
       default: () => {},
     },

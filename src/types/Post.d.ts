@@ -23,7 +23,7 @@ export interface Toc {
   text?: string
 }
 
-export interface Post {
+export interface Project {
   categories?: string[]
   type?: string
   header?: string

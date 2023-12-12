@@ -2,7 +2,7 @@
 import Vue from "vue"
 
 /* Interfaces */
-import type {Post} from "@/types/Post"
+import type {Project} from "@/types/Post"
 import type {FetchReturn} from "@nuxt/content/types/query-builder"
 
 export default Vue.extend({
@@ -13,14 +13,14 @@ export default Vue.extend({
         day: "numeric",
       }),
       query: this.$route.query,
-      projects: [] as (Post[] & FetchReturn) | (Post[] & FetchReturn)[],
+      projects: [] as (Project[] & FetchReturn) | (Project[] & FetchReturn)[],
     }
   },
   fetchOnServer: false,
   async fetch() {
     this.projects = await this.$content("projects")
       .without(["body"])
-      .fetch<Post[]>()
+      .fetch<Project[]>()
   },
   head() {
     const title = "Stephen Chen Projects"
@@ -42,21 +42,21 @@ export default Vue.extend({
       )
     },
     getYearGroupedPosts() {
-      const yearsOfPosts = new Map() as Map<number, Post[]>
+      const yearsOfPosts = new Map() as Map<number, Project[]>
 
       for (const project of this.projects) {
         if (!project.createdAt) continue
         const year = new Date(project.createdAt).getFullYear()
 
         if (yearsOfPosts.has(year)) {
-          yearsOfPosts.get(year)?.push(project as Post)
+          yearsOfPosts.get(year)?.push(project as Project)
         } else {
-          yearsOfPosts.set(year, [project as Post])
+          yearsOfPosts.set(year, [project as Project])
         }
       }
 
       const years = [...yearsOfPosts.keys()].sort((a, b) => b - a)
-      const sortedByYears = new Map() as Map<number, Post[]>
+      const sortedByYears = new Map() as Map<number, Project[]>
 
       for (const year of years) {
         sortedByYears.set(year, yearsOfPosts.get(year)!)
