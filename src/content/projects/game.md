@@ -1,9 +1,8 @@
 ---
 title: 6 款遊戲
-description: 這幾款遊戲讓使用者可以下注，機率隨機開獎
+description: 提供遊戲介面讓其他平台串接，以及後續營運
 header: https://raw.githubusercontent.com/5SMNOONMS5/portfolio/main/resources/projects/game/game1.png
-type:
-  - side-project
+type: Side Project
 tags: 
   - Laravel
   - GCP

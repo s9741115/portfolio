@@ -1,17 +1,12 @@
 ---
-title: 數位照護 APP
-description: 將照護流程延續至病友生活中
+title: 高雄長庚醫院 健康管家暖暖 App
+description: 負責開發給高雄長庚醫護人員使用的後台，提供 API 給 iOS、Android
 header: https://raw.githubusercontent.com/5SMNOONMS5/portfolio/main/resources/projects/cancer/screenshot1.png
-type:
-  - side-project
+type: Side Project
 tags:
   - Laravel
 createdAt: 2023-03-11T13:32:52.449Z
 ---
-
-### 專案範疇
-
-負責開發給長庚醫療內部使用的後台，以及 API 給 iOS、Android 使用
 
 ### 示意圖
 

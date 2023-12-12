@@ -2,8 +2,7 @@
 title: NEWOIL 3 
 description: 類似 Wordpress 的快速架站系統，讓公司客人可以在短時間內完成快速架站
 header: https://raw.githubusercontent.com/5SMNOONMS5/portfolio/main/resources/projects/newoil3/newoil3_1.png
-type:
-  - isb
+type: ISB
 tags:
   - Laravel
   - Vue2
