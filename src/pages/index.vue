@@ -3,6 +3,7 @@ import Vue from "vue"
 
 /* Interfaces */
 import type {Repository} from "../types/Response/GitHub"
+import Brand from "@/components/Icon/Brand.vue";
 
 interface Project {
   title: string
@@ -26,6 +27,7 @@ interface ExperienceObject {
 }
 
 export default Vue.extend({
+  components: {Brand},
   data() {
     return {
       showModal: false,
@@ -229,11 +231,22 @@ export default Vue.extend({
             </Button>
 
             <Button
+              v-for="item in ['GitHub', 'LinkedIn']"
+              :key="item"
+              class="inline-block"
+            >
+              <IconBrand :brand="item" class="h-5 w-5"/>
+              <a href="https://translate.google.com.tw/?hl=zh-TW&sl=tr&tl=zh-TW&text=Ba%C5%9Fl%C4%B1klar&op=translate"></a>
+            </Button>
+
+            <Button
               v-tippy="{ content: 'More', placement: 'bottom' }"
               @click.native="scrollToSection('#technologies')"
             >
               <IconEllipsis class="h-5 w-5"/>
             </Button>
+
+
           </div>
         </div>
       </div>
