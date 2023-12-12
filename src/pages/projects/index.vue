@@ -99,11 +99,11 @@ export default Vue.extend({
           :to="`/projects/${project.slug}`"
           class="flex items-start gap-6 rounded-lg"
         >
-          <span
-            class="w-[20%] text-black/50 dark:text-white/50 md:w-1/12 flex-shrink-0"
-          >
-            {{ formatter.format(new Date(project.createdAt)) }}
-          </span>
+<!--          <span-->
+<!--            class="w-[20%] text-black/50 dark:text-white/50 md:w-1/12 flex-shrink-0"-->
+<!--          >-->
+<!--            *-->
+<!--          </span>-->
 
           <span
             class="text-blue-600 dark:text-blue-300 font-medium leading-relaxed"
