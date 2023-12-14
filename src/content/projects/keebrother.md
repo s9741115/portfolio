@@ -10,7 +10,7 @@ createdAt: 2023-03-11T13:32:52.449Z
 
 ### 前台
 
-[網站連結](https://staging-keebrother.netlify.app/)
+[網站連結 - 還在上資料階段](https://staging-keebrother.netlify.app/)
 
 ### 專案範疇
 
@@ -22,17 +22,22 @@ createdAt: 2023-03-11T13:32:52.449Z
 <smart-figure src="https://raw.githubusercontent.com/5SMNOONMS5/portfolio/main/resources/projects/keebrother/keebrother3.png"></smart-figure>
 <smart-figure src="https://raw.githubusercontent.com/5SMNOONMS5/portfolio/main/resources/projects/keebrother/keebrother4.png"></smart-figure>
 
-
-
 ### 後端技術細節
 
-此專案本身比較沒有難度，但是有玩兩個新東西，
+此專案幾乎所有資料都是透過 API, 並且可以在後台 CRUD
+
+此專案本身比較沒有難度，就是欄位多了一點比較麻煩....。
+
+但是有玩兩個新東西
+
 * AWS S3
 * [Scribe API Docs](https://scribe.knuckles.wtf/laravel/documenting)
 
-Scribe 我覺得很好用，相比 swagger 寫很麻煩的 Docs，而且語法相對簡單
+[Scribe](https://scribe.knuckles.wtf/laravel/documenting) 我覺得很好用，相比 swagger 語法相對簡單非常多
 
-前端非常友善，因為可以直接產生對應的程式碼給前端複製貼上，大推
+對前端極度友善，我最喜歡的就是可以直接客製化產生對應的程式碼給前端複製貼上，
+
+此專案前端使用 Nuxt3，產生程式碼如下圖
 
 <smart-figure src="https://raw.githubusercontent.com/5SMNOONMS5/portfolio/main/resources/projects/keebrother/keebrother5.png"></smart-figure>
 
