@@ -12,11 +12,7 @@ createdAt: 2023-03-11T13:32:52.449Z
 
 負責開發 iOS APP, 上架 App Store, 接後端 API
 
-### 示意圖
-
-<smart-figure src="https://raw.githubusercontent.com/5SMNOONMS5/portfolio/main/resources/projects/tchat/tchat3.png"></smart-figure>
-
-### 後端技術細節
+### iOS 技術細節
 
 專案使用 Swift 搭配 MVVM 架構開發，使用 [Carthage](https://github.com/Carthage/Carthage) 管理第三方套件，[Fastlane](https://fastlane.tools/) 來打包上架
 
