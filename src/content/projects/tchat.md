@@ -44,7 +44,7 @@ createdAt: 2023-03-11T13:32:52.449Z
 
 這邊 Button 設計好只要傳 config 裡面包含文字跟圖片
 
-第二難點是資料的處理
+第二難點是任務資料的處理
 
 <smart-figure src="https://raw.githubusercontent.com/5SMNOONMS5/portfolio/main/resources/projects/tchat/tchat4.png"></smart-figure>
 
