@@ -12,6 +12,7 @@ createdAt: 2023-03-11T13:32:52.449Z
 
 [網站連結 - 還在上資料階段](https://staging-keebrother.netlify.app/)
 
+
 ### 專案範疇
 
 負責開發給內部使用的後台，以及 API 給 前端使用
@@ -24,9 +25,9 @@ createdAt: 2023-03-11T13:32:52.449Z
 
 ### 後端技術細節
 
-此專案幾乎所有資料都是透過 API, 並且可以在後台 CRUD
+此專案幾乎所有資料都是透過 API，幾乎都可以可以在後台 CRUD
 
-此專案本身比較沒有難度，就是欄位多了一點比較麻煩....。
+此專案本身比較沒有難度，就是欄位多了一點比較麻煩....
 
 但是有玩兩個新東西
 
@@ -37,7 +38,7 @@ createdAt: 2023-03-11T13:32:52.449Z
 
 對前端極度友善，我最喜歡的就是可以直接客製化產生對應的程式碼給前端複製貼上，
 
-此專案前端使用 Nuxt3，產生程式碼如下圖
+此專案前端使用 [Nuxt3](https://nuxt.com/)，因為未來客人可能會有 SEO 需求，而產生程式碼範例如下圖
 
 <smart-figure src="https://raw.githubusercontent.com/5SMNOONMS5/portfolio/main/resources/projects/keebrother/keebrother5.png"></smart-figure>
 
