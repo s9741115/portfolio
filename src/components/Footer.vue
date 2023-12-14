@@ -8,9 +8,7 @@ export default Vue.extend({
      * @returns {string}
      */
     getLocalizedNotice(): string {
-      if (this.$route.name?.includes("projects"))
-        return "Bu site GitHub üzerinde açık kaynak olarak paylaşılmıştır."
-      else return "This website is open-source on GitHub"
+      return "This project is open-source on GitHub, click to see the source code"
     },
   },
 })
@@ -23,7 +21,7 @@ export default Vue.extend({
     <div class="responsive-screen">
       <div class="space-y-4 text-center sm:(space-y-0 space-x-6 text-left)">
         <SmartLink
-          href="https://github.com/eggsy/website"
+          href="https://github.com/5SMNOONMS5/portfolio"
           class="text-center border-b border-transparent hover:border-black/10 dark:hover:border-white/10 transition-colors"
           blank
         >
