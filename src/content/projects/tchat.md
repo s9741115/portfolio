@@ -38,19 +38,15 @@ createdAt: 2023-03-11T13:32:52.449Z
 
 畫面上我覺得蠻難的，但設計師規劃的 Design Guild line 非常完整，只要能做好 component 就可以了
 
-舉個小🌰
-
-<smart-figure image-class="w-96 h-96" src="https://raw.githubusercontent.com/5SMNOONMS5/portfolio/main/resources/projects/tchat/tchat1.png"></smart-figure>
-
-這邊 Button 設計好只要傳 config 裡面包含文字跟圖片
+<smart-figure image-class="w-[251px]" src="https://raw.githubusercontent.com/5SMNOONMS5/portfolio/main/resources/projects/tchat/tchat1.png"></smart-figure>
 
 再來是任務列表資料的處理
 
-<smart-figure image-class="justify-items-center" src="https://raw.githubusercontent.com/5SMNOONMS5/portfolio/main/resources/projects/tchat/tchat4.png"></smart-figure>
+<smart-figure image-class="w-[203px]" src="https://raw.githubusercontent.com/5SMNOONMS5/portfolio/main/resources/projects/tchat/tchat4.png"></smart-figure>
 
 API 這邊是 web socket base 的，會一直監聽當其他人對任務 state 的更動
 
-畫面處理上要去 Diff 當前頁面的差異化，當刪除的時候 Remove，有新的或者有更新都只單純去更新那 TableviewCell 
+畫面處理上新資料要去 Diff 與當前頁面資料的差異化，當刪除的時候 Remove，有新的或者有更新都只單純去更新那 TableviewCell 
 
 這邊我採用此套件 [Diff](https://github.com/wokalski/Diff.swift) 來解決
 
