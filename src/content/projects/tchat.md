@@ -40,25 +40,23 @@ createdAt: 2023-03-11T13:32:52.449Z
 
 舉個小🌰
 
-<smart-figure src="https://raw.githubusercontent.com/5SMNOONMS5/portfolio/main/resources/projects/tchat/tchat1.png"></smart-figure>
+<smart-figure image-class="w-96 h-96" src="https://raw.githubusercontent.com/5SMNOONMS5/portfolio/main/resources/projects/tchat/tchat1.png"></smart-figure>
 
 這邊 Button 設計好只要傳 config 裡面包含文字跟圖片
 
-第二難點是任務資料的處理
+再來是任務列表資料的處理
 
-<smart-figure src="https://raw.githubusercontent.com/5SMNOONMS5/portfolio/main/resources/projects/tchat/tchat4.png"></smart-figure>
+<smart-figure image-class="justify-items-center" src="https://raw.githubusercontent.com/5SMNOONMS5/portfolio/main/resources/projects/tchat/tchat4.png"></smart-figure>
 
-以上面這任務列表為案例
+API 這邊是 web socket base 的，會一直監聽當其他人對任務 state 的更動
 
-API 這邊是 web socket base 的，當其他人有動作的時候會推送資料過來，所以要一直去監聽處理上，而在 UI 的顯示上面並不是全部拿到資料就重新整理
+畫面處理上要去 Diff 當前頁面的差異化，當刪除的時候 Remove，有新的或者有更新都只單純去更新那 TableviewCell 
 
-而是要去判斷哪些資料有被 CRUD，這邊我採用這套件 [Diff](https://github.com/wokalski/Diff.swift) 來解決
+這邊我採用此套件 [Diff](https://github.com/wokalski/Diff.swift) 來解決
 
-我這邊做法是採用 LIFO (Last In First Out) 機制, 假設在 3 秒內有 10 筆資料進來，那我只會處理最後一筆資料，其他全部 drop 掉
+而任務又分成**我的任務**跟**他的任務**，然後再各別分成**進行中**跟**已完成**，進行中跟完成的**排序**又各別不一樣
 
-而在畫面呈現上要先把資料區分成**我的任務**跟**他的任務**，然後再各別分成**進行中**跟**已完成**，進行中跟完成的**排序**又各別不一樣
-
-這邊在實作上有非常大的挑戰，不知道還有沒有更好的做法
+實作上有非常大的挑戰
 
 ### Reference
 
