@@ -27,7 +27,7 @@ createdAt: 2023-03-11T13:32:52.449Z
 
 但因為更新的歷史資料蠻大，所以使用 pipelining 加上 chunk 的方式來處理
 
-而資料庫這端在查詢也使用 Cursor-based Pagination 來處理
+而資料庫關於歷史紀錄查詢也使用 Cursor-based Pagination 來處理
 
 ### GCP 技術細節
 
