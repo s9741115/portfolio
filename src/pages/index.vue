@@ -233,8 +233,8 @@ export default Vue.extend({
           <h6
               class="font-semibold text-center md:(text-left) text-black/90 dark:text-white/90"
           >
-            4 years of PHP and Vue <br>
-            5 years of iOS
+            4 Years of PHP and Vue <br>
+            5 Years of iOS
           </h6>
 
           <div
