@@ -2,7 +2,8 @@
 title: 6 款遊戲
 description: 提供遊戲介面讓其他平台串接，以及後續營運
 header: https://raw.githubusercontent.com/5SMNOONMS5/portfolio/main/resources/projects/game/game1.png
-type: Side Project
+type: Backend
+category: Side Project
 tags: 
   - Laravel
   - GCP

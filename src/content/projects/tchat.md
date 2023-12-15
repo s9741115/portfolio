@@ -2,7 +2,8 @@
 title: TChat
 description: Task Management APP
 header: https://raw.githubusercontent.com/5SMNOONMS5/portfolio/main/resources/projects/tchat/tchat2.png
-type: Side Project
+category: Side Project
+type: iOS
 tags:
   - iOS
 createdAt: 2023-03-11T13:32:52.449Z

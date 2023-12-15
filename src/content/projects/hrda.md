@@ -2,7 +2,8 @@
 title: HRDA
 description: 提供平台管道給研究者上傳問卷資料，再透過不同 AI 模型來分析
 header: https://raw.githubusercontent.com/5SMNOONMS5/portfolio/main/resources/projects/hrda/hrda1.png
-type: Side Project
+type: Backend
+category: Side Project
 tags:
   - Laravel
 createdAt: 2023-03-11T13:32:52.449Z

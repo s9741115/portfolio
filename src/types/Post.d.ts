@@ -24,7 +24,7 @@ export interface Toc {
 }
 
 export interface Project {
-  categories?: string[]
+  category?: string
   type?: string
   header?: string
   slug?: string

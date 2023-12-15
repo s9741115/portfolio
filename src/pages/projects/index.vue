@@ -41,16 +41,16 @@ export default Vue.extend({
         this.$fetchState?.pending === true && this.$fetchState.error !== null
       )
     },
-    getTypeGroupedProjects() {
+    getCategoryGroupedProjects() {
       const typeOfProjects = new Map() as Map<number, Project[]>
 
       for (const project of this.projects) {
-        if (!project.type) continue
+        if (!project.category) continue
 
-        if (typeOfProjects.has(project.type)) {
-          typeOfProjects.get(project.type)?.push(project as Project)
+        if (typeOfProjects.has(project.category)) {
+          typeOfProjects.get(project.category)?.push(project as Project)
         } else {
-          typeOfProjects.set(project.type, [project as Project])
+          typeOfProjects.set(project.category, [project as Project])
         }
       }
 
@@ -83,7 +83,7 @@ export default Vue.extend({
 
   <div v-else class="mt-12 space-y-10">
     <section
-      v-for="[year, projects] in getTypeGroupedProjects"
+      v-for="[year, projects] in getCategoryGroupedProjects"
       :key="year"
       class="space-y-4"
     >
@@ -99,11 +99,11 @@ export default Vue.extend({
           :to="`/projects/${project.slug}`"
           class="flex items-start gap-6 rounded-lg"
         >
-<!--          <span-->
-<!--            class="w-[20%] text-black/50 dark:text-white/50 md:w-1/12 flex-shrink-0"-->
-<!--          >-->
-<!--            *-->
-<!--          </span>-->
+          <span
+            class="w-[20%] text-black/50 dark:text-white/50 md:w-1/12 flex-shrink-0"
+          >
+            {{ project.type }}
+          </span>
 
           <span
             class="text-blue-600 dark:text-blue-300 font-medium leading-relaxed"

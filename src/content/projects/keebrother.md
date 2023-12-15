@@ -2,7 +2,8 @@
 title: 紀氏五金
 description: 紀氏五金品牌的形象網站
 header: https://raw.githubusercontent.com/5SMNOONMS5/portfolio/main/resources/projects/keebrother/keebrother1.png
-type: Side Project
+type: Backend
+category: Side Project
 tags:
   - Laravel
 createdAt: 2023-03-11T13:32:52.449Z

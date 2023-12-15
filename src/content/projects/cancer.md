@@ -2,7 +2,8 @@
 title: 高雄長庚醫院 健康管家暖暖 App
 description: 負責開發給高雄長庚醫護人員使用的後台，提供 API 給 iOS、Android
 header: https://raw.githubusercontent.com/5SMNOONMS5/portfolio/main/resources/projects/cancer/screenshot1.png
-type: Side Project
+type: Backend
+category: Side Project
 tags:
   - Laravel
 createdAt: 2023-03-11T13:32:52.449Z
