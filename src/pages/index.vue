@@ -151,6 +151,10 @@ export default Vue.extend({
             {
               title: "Nuxt3 & Vue3",
               image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqc8y9vg7_R6EqZoXObhwRdkl2FH54VkWEcEpXO6HzWXHwoLSY6V1wKzazD7spkKw4mvY&usqp=CAU"
+            },
+            {
+              title: "iOS",
+              image: "https://cdn3.iconfinder.com/data/icons/social-media-logos-glyph/2048/5315_-_Apple-512.png"
             }
           ],
         },
@@ -172,6 +176,10 @@ export default Vue.extend({
             {
               title: "Figma",
             },
+            {
+              title: "Xcode",
+              image: "https://cdn3.iconfinder.com/data/icons/macosxstyle/macosxstyle_png/128/Xcode.png"
+            }
           ],
         },
         {
