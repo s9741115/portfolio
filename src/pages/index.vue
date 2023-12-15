@@ -120,13 +120,13 @@ export default Vue.extend({
         ],
         pages: [
           {
-            title: "Blog",
+            title: "部落格",
             description:
                 "My Latest Blog Posts. I write about tech, programming and more!",
             href: "https://medium.com/me/stories/public",
           },
           {
-            title: "Projects",
+            title: "專案",
             description:
                 "All my projects, including open-source, side-projects and more!",
             href: "/projects",
