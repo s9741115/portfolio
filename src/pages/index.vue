@@ -149,7 +149,7 @@ export default Vue.extend({
               image: "https://d1.awsstatic.com/acs/characters/Logos/Docker-Logo_Horizontel_279x131.b8a5c41e56b77706656d61080f6a0217a3ba356d.png"
             },
             {
-              title: "Nuxt3 & Vue3",
+              title: "Nuxt3 | Vue3",
               image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqc8y9vg7_R6EqZoXObhwRdkl2FH54VkWEcEpXO6HzWXHwoLSY6V1wKzazD7spkKw4mvY&usqp=CAU"
             },
             {
