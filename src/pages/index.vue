@@ -62,12 +62,6 @@ export default Vue.extend({
             date: "2019/10 - 2020/06 ( 9 m )",
           },
           {
-            title: "明亞股份",
-            url: "",
-            position: "iOS Developer",
-            date: "2019/04 - 2019/07 ( 3 m )",
-          },
-          {
             title: "火燒雲科技",
             url: "https://pttcareers.com/Salary/1Kb1Kep0",
             position: "iOS Developer & Backend Developer",
@@ -235,14 +229,20 @@ export default Vue.extend({
           <h1
               class="font-semibold text-center text-4xl md:(text-6xl text-left) text-black/90 leading-normal dark:text-white/90"
           >
-            Software Developer
+            Hi I am Stephen Chen
           </h1>
 
           <h6
               class="font-semibold text-center md:(text-left) text-black/90 dark:text-white/90"
           >
-            4 Years of PHP and Vue <br>
+            4 Years of Laravel and Vue <br>
             5 Years of iOS
+          </h6>
+
+          <h6
+            class=" text-center md:(text-left) text-black-300 dark:text-white/90"
+          >
+            tasb00429@gmail.com
           </h6>
 
           <div
