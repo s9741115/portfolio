@@ -13,7 +13,6 @@ createdAt: 2023-03-11T13:32:52.449Z
 
 [網站連結 - 還在上資料階段](https://staging-keebrother.netlify.app/)
 
-
 ### 專案範疇
 
 負責開發給內部使用的後台，以及 API 給 前端使用
@@ -26,11 +25,13 @@ createdAt: 2023-03-11T13:32:52.449Z
 
 ### 後端技術細節
 
-此專案幾乎所有資料都是透過 API，幾乎都可以可以在後台 CRUD
+此專案所有資料都是透過 API，都可在後台 CRUD
 
-此專案本身比較沒有難度，就是欄位多了一點比較麻煩，還有處理舊有網站轉資料的過程比較棘手 
+由於舊網站是 wordpress 的，在處理資料轉移的過程中使用 excel 上傳，並且花蠻多時間跟 PM 溝通 excel 上傳的格式以及規則
 
-但是有玩兩個新東西
+excel 規則部分包含處理 *圖文編輯器內圖片路徑*、*影片鑲嵌轉換*、*多圖格式、。
+
+至於此專案有嘗試使用之前沒用過的服務
 
 * AWS S3
 * [Scribe API Docs](https://scribe.knuckles.wtf/laravel/documenting)
