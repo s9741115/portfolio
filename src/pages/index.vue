@@ -229,7 +229,7 @@ export default Vue.extend({
           <h1
               class="font-semibold text-center text-4xl md:(text-6xl text-left) text-black/90 leading-normal dark:text-white/90"
           >
-            Hi I am Stephen Chen
+            Hi I am Ian Chen
           </h1>
 
           <h6
